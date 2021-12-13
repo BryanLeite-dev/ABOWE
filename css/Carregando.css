@@ -1,0 +1,57 @@
+body{
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	display: flex;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+#carregando{
+	height:100px;
+	width:500px;
+	margin-top:-150px;
+	font-size:50px;
+	position:absolute;
+	color: #fff;
+	text-shadow:0em 0em 0.1em;
+}
+
+.linha{
+	background: rgba(255,255,255,0.1);
+	justify-content: flex-start;
+	border-radius: 100px;
+	align-items: center;
+	position: relative;
+	padding: 0 5px;
+	display: flex;	
+	height: 40px;
+	width: 500px;
+}
+
+.linha-animacao{
+	animation: load 10s normal forwards;
+	box-shadow: 0 10px 40px -10px #fff;
+	border-radius: 100px;
+	background: #fff;
+	height: 30px;
+	width: 0;
+}
+
+@keyframes load {
+    0%{
+      width: 0%;
+    }
+    25%{
+        width: 50%;
+    }
+    50%{
+        width: 75%;
+    }
+    75%{
+        width: 85%;
+    }
+    100%{
+        width: 100%;
+    }
+};
