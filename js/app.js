@@ -28,7 +28,7 @@ const reviews = [
     img:
       "img/Henri1.jpg",
     text:
-      "Ninguém tem a obrigação de ser perfeito, mas tem capacidade de ser o seu melhor.",
+      "Ninguém precisa ser perfeito, mas tem capacidade de ser o seu melhor.",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const reviews = [
     job: "Programador Web",
     rede: "@um_certo_bryan",
     img:
-      "img/Bryan.png",
+      "img/Bryan.jpeg",
     text:
       "Qual a graça de ser normal em um mundo anormal?",
     
@@ -61,16 +61,7 @@ const reviews = [
     text:
       "Por que inimigos, se podemos ser amigos?",
   },
-  {
-    id: 7,
-    name: "Rafael Sgurscow",
-    job: "Auxiliar de Programação Web",
-	rede: "@sgursco",
-    img:
-      "img/Rafa.png",
-    text:
-      "Controle o que você pode controlar, aceite e saiba lidar com o que você não pode.",
-  },
+  
 ];
 // select items
 const img = document.getElementById("person-img");
@@ -122,4 +113,5 @@ prevBtn.addEventListener("click", function () {
   showPerson(currentItem);
 });
 // show random person
+
 
