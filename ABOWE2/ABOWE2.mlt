@@ -1,0 +1,1079 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.1.0" title="Shotcut version 21.10.31" producer="main_bin">
+  <profile description="PAL 4:3 DV or DVD" width="1280" height="720" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="16" display_aspect_den="9" frame_rate_num="60" frame_rate_den="1" colorspace="709"/>
+  <producer id="producer0" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">C:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/Screenshot 2021-12-13 072101.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-12-13T10:21:33</property>
+    <property name="shotcut:skipConvert">1</property>
+    <property name="shotcut:caption">Screenshot 2021-12-13 072101.jpg</property>
+    <property name="shotcut:hash">cefd19a1bc593f6bbb9cf71d5a684ca6</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:03.983"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="00:20:00.250">
+    <property name="length">00:20:00.267</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="00:20:00.250"/>
+  </playlist>
+  <chain id="chain0" out="00:00:11.083">
+    <property name="length">00:00:11.100</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/2021-12-13_08-50-56.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">3f2a3fdc9076b96a40f98969060fb6d9</property>
+    <property name="shotcut:caption">2021-12-13_08-50-56.mp4</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain1" out="00:00:13.300">
+    <property name="length">00:00:13.317</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/Primeira parte.mkv</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">bc343d8e64954e57e1c284ee577ab06c</property>
+    <property name="shotcut:caption">Primeira parte.mkv</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain2" out="00:01:23.550">
+    <property name="length">00:01:23.567</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/2021-12-13 06-53-42.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">ba260a6046b226551dc63d6a5cd0d60b</property>
+    <property name="shotcut:caption">2021-12-13 06-53-42.mp4</property>
+    <property name="xml">was here</property>
+  </chain>
+  <tractor id="tractor0" in="00:00:00.000" out="00:00:00.017">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="chain1" in="00:00:12.567" out="00:00:12.583"/>
+    <track producer="chain2" in="00:00:18.133" out="00:00:18.150"/>
+    <transition id="transition0" out="00:00:00.017">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition1" out="00:00:00.017">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <chain id="chain3" out="00:00:52.450">
+    <property name="length">00:00:52.467</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/2021-12-13 08-00-40.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">690fa1b38593cf657718db0248b1b44c</property>
+    <property name="shotcut:caption">2021-12-13 08-00-40.mp4</property>
+    <property name="xml">was here</property>
+  </chain>
+  <tractor id="tractor1" in="00:00:00.000" out="00:00:00.100">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="chain2" in="00:01:22.333" out="00:01:22.433"/>
+    <track producer="chain3" in="00:00:00.850" out="00:00:00.950"/>
+    <transition id="transition2" out="00:00:00.100">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition3" out="00:00:00.100">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <producer id="producer1" in="00:00:00.000" out="00:07:20.683">
+    <property name="length">26442</property>
+    <property name="eof">pause</property>
+    <property name="resource">blank</property>
+    <property name="mlt_service">blank</property>
+  </producer>
+  <producer id="producer2" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/Screenshot 2021-12-13 073751.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-12-13T10:37:56</property>
+    <property name="shotcut:hash">5837f2d8fd0b45a72ae97f97c4f8a029</property>
+    <property name="shotcut:caption">Screenshot 2021-12-13 073751.jpg</property>
+    <property name="xml">was here</property>
+  </producer>
+  <tractor id="tractor2" in="00:00:00.000" out="00:00:39.067">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer1" in="00:05:29.250" out="00:06:08.317"/>
+    <track producer="producer2" in="00:00:00.033" out="00:00:00.033"/>
+    <transition id="transition4">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition5">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <chain id="chain4" out="00:07:20.750">
+    <property name="length">00:07:20.767</property>
+    <property name="eof">pause</property>
+    <property name="resource">d:/Obs/2021-12-13 06-09-32.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">5d0e75a9c7290f4ba3127d715046d477</property>
+    <property name="shotcut:caption">2021-12-13 06-09-32.mp4</property>
+    <property name="xml">was here</property>
+  </chain>
+  <tractor id="tractor3" in="00:00:00.000" out="00:00:00.017">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer2" in="00:00:01.033" out="00:00:01.050"/>
+    <track producer="chain4" in="00:00:00.000" out="00:00:00.017"/>
+    <transition id="transition6" out="00:00:00.017">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition7" out="00:00:00.017">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <producer id="producer3" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/Screenshot 2021-12-13 082019.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-12-13T11:20:23</property>
+    <property name="shotcut:hash">998d0570b3114f1d5b36d7125172bfe4</property>
+    <property name="shotcut:caption">Screenshot 2021-12-13 082019.jpg</property>
+    <property name="xml">was here</property>
+  </producer>
+  <tractor id="tractor4" in="00:00:00.000" out="00:00:00.017">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="chain4" in="00:07:20.733" out="00:07:20.750"/>
+    <track producer="producer3" in="00:00:00.000" out="00:00:00.017"/>
+    <transition id="transition8" out="00:00:00.017">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition9" out="00:00:00.017">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <blank length="00:01:22.267"/>
+    <entry producer="chain0" in="00:00:00.000" out="00:00:11.083"/>
+    <entry producer="chain1" in="00:00:00.000" out="00:00:12.550"/>
+    <entry producer="tractor0" in="00:00:00.000" out="00:00:00.017"/>
+    <entry producer="chain2" in="00:00:18.167" out="00:01:22.317"/>
+    <entry producer="tractor1" in="00:00:00.000" out="00:00:00.100"/>
+    <entry producer="chain3" in="00:00:00.967" out="00:00:52.450"/>
+    <blank length="00:02:35.800"/>
+    <entry producer="tractor2" in="00:00:00.000" out="00:00:00.000"/>
+    <blank length="00:00:00.983"/>
+    <entry producer="tractor3" in="00:00:00.000" out="00:00:00.017"/>
+    <blank length="00:07:20.700"/>
+    <entry producer="tractor4" in="00:00:00.000" out="00:00:00.017"/>
+  </playlist>
+  <producer id="producer4" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/Screenshot 2021-12-13 072101.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-12-13T10:21:33</property>
+    <property name="shotcut:hash">cefd19a1bc593f6bbb9cf71d5a684ca6</property>
+    <property name="shotcut:caption">Screenshot 2021-12-13 072101.jpg</property>
+    <property name="xml">was here</property>
+  </producer>
+  <chain id="chain5" out="00:01:31.467">
+    <property name="length">00:01:31.483</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/Record_2021_12_13_08_50_45_441.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">19aaefea76bfb5c0dc018981424698d8</property>
+    <property name="shotcut:caption">Record_2021_12_13_08_50_45_441.mp4</property>
+    <property name="xml">was here</property>
+  </chain>
+  <producer id="producer5" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/Screenshot 2021-12-13 084405.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-12-13T11:44:08</property>
+    <property name="shotcut:hash">7533e79228136315ca11bbc226b3fc30</property>
+    <property name="shotcut:caption">Screenshot 2021-12-13 084405.jpg</property>
+    <property name="xml">was here</property>
+  </producer>
+  <chain id="chain6" out="00:05:39.650">
+    <property name="length">00:05:39.667</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/2021-12-13 07-43-20.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">da88ba9af92d1ac30bcb4a3a6ff8cfbc</property>
+    <property name="shotcut:caption">2021-12-13 07-43-20.mp4</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+    <property name="video_delay">-1</property>
+    <property name="xml">was here</property>
+    <filter id="filter0" in="00:00:41.500" out="00:03:01.233">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </chain>
+  <chain id="chain7" out="00:05:39.650">
+    <property name="length">00:05:39.667</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/2021-12-13 07-43-20.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">da88ba9af92d1ac30bcb4a3a6ff8cfbc</property>
+    <property name="shotcut:caption">2021-12-13 07-43-20.mp4</property>
+    <property name="shotcut:defaultAudioIndex">1</property>
+    <property name="video_delay">-1</property>
+    <property name="xml">was here</property>
+    <filter id="filter1" in="00:05:26.917" out="00:05:29.767">
+      <property name="window">75</property>
+      <property name="max_gain">20dB</property>
+      <property name="mlt_service">volume</property>
+      <property name="shotcut:filter">muteVolume</property>
+      <property name="gain">0</property>
+    </filter>
+  </chain>
+  <producer id="producer6" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/Screenshot 2021-12-13 073208.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-12-13T10:32:13</property>
+    <property name="shotcut:hash">232f06cbb4d8ce2a2bc5eced65d9b904</property>
+    <property name="shotcut:caption">Screenshot 2021-12-13 073208.jpg</property>
+    <property name="xml">was here</property>
+  </producer>
+  <chain id="chain8" out="00:06:08.317">
+    <property name="length">00:06:08.333</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/2021-12-13 07-00-44.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">d1e82a0bef84dffd0cfb68f7f7cd1372</property>
+    <property name="shotcut:caption">2021-12-13 07-00-44.mp4</property>
+  </chain>
+  <producer id="producer7" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/Screenshot 2021-12-13 073751.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-12-13T10:37:56</property>
+    <property name="shotcut:hash">5837f2d8fd0b45a72ae97f97c4f8a029</property>
+    <property name="shotcut:caption">Screenshot 2021-12-13 073751.jpg</property>
+  </producer>
+  <tractor id="tractor5" in="00:00:00.000" out="00:00:00.000">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="chain8" in="00:06:08.317" out="00:06:08.317"/>
+    <track producer="producer7" in="00:00:00.000" out="00:00:00.000"/>
+    <transition id="transition10">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition11">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+      <property name="mlt_service">mix</property>
+    </transition>
+  </tractor>
+  <tractor id="tractor6" in="00:00:00.000" out="00:00:00.067">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="producer7" in="00:00:01.083" out="00:00:01.150"/>
+    <track producer="chain4" in="00:00:00.033" out="00:00:00.100"/>
+    <transition id="transition12" out="00:00:00.067">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition13" out="00:00:00.067">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+      <property name="mlt_service">mix</property>
+    </transition>
+  </tractor>
+  <producer id="producer8" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/Screenshot 2021-12-13 082019.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-12-13T11:20:23</property>
+    <property name="shotcut:hash">998d0570b3114f1d5b36d7125172bfe4</property>
+    <property name="shotcut:caption">Screenshot 2021-12-13 082019.jpg</property>
+  </producer>
+  <chain id="chain9" out="00:02:10.983">
+    <property name="length">00:02:11.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/trailer2looking for.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">e5e3fc99132d3a5cbf20e08b22bf0669</property>
+    <property name="shotcut:caption">trailer2looking for.mp4</property>
+    <property name="xml">was here</property>
+  </chain>
+  <producer id="producer9" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/Screenshot 2021-12-13 092919.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-12-13T12:29:23</property>
+    <property name="shotcut:hash">11391ed9e93fcdc8b76b7e2cfd3e1042</property>
+    <property name="shotcut:caption">Screenshot 2021-12-13 092919.jpg</property>
+  </producer>
+  <tractor id="tractor7" in="00:00:00.000" out="00:00:00.100">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="chain9" in="00:02:10.883" out="00:02:10.983"/>
+    <track producer="producer9" in="00:00:00.000" out="00:00:00.100"/>
+    <transition id="transition14" out="00:00:00.100">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+    </transition>
+    <transition id="transition15" out="00:00:00.100">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+      <property name="mlt_service">mix</property>
+    </transition>
+  </tractor>
+  <producer id="producer10" in="00:00:00.000" out="03:59:59.983">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/OneDrive - Etec Centro Paula Souza/Desktop/Screenshot 2021-12-13 093125.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2021-12-13T12:31:29</property>
+    <property name="shotcut:hash">e5e97abb24cd35f387d514a022aaf6c8</property>
+    <property name="shotcut:caption">Screenshot 2021-12-13 093125.jpg</property>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <entry producer="producer4" in="00:00:00.000" out="00:00:00.983"/>
+    <blank length="00:00:00.467"/>
+    <entry producer="chain5" in="00:00:00.000" out="00:01:18.750"/>
+    <blank length="00:00:00.617"/>
+    <entry producer="producer5" in="00:00:00.000" out="00:00:00.983"/>
+    <blank length="00:00:00.400"/>
+    <entry producer="chain6" in="00:00:41.500" out="00:03:01.233"/>
+    <blank length="00:00:00.050"/>
+    <entry producer="chain7" in="00:05:26.917" out="00:05:29.767"/>
+    <entry producer="producer6" in="00:00:00.000" out="00:00:00.817"/>
+    <entry producer="chain8" in="00:00:00.000" out="00:06:08.300"/>
+    <entry producer="tractor5" in="00:00:00.000" out="00:00:00.000"/>
+    <entry producer="producer7" in="00:00:00.017" out="00:00:01.067"/>
+    <entry producer="tractor6" in="00:00:00.000" out="00:00:00.067"/>
+    <entry producer="chain4" in="00:00:00.117" out="00:07:20.717"/>
+    <blank length="00:00:00.033"/>
+    <entry producer="producer8" in="00:00:00.000" out="00:00:01.067"/>
+    <blank length="00:00:00.050"/>
+    <entry producer="chain9" in="00:00:01.350" out="00:02:10.867"/>
+    <entry producer="tractor7" in="00:00:00.000" out="00:00:00.100"/>
+    <entry producer="producer9" in="00:00:00.117" out="00:00:23.483"/>
+    <entry producer="producer10" in="00:00:00.000" out="00:00:10.200"/>
+  </playlist>
+  <chain id="chain10" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter2" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter3" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <chain id="chain11" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter4" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter5" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <chain id="chain12" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter6" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter7" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <chain id="chain13" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter8" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter9" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <chain id="chain14" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter10" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter11" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <chain id="chain15" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter12" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter13" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <chain id="chain16" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter14" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter15" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <chain id="chain17" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter16" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter17" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <chain id="chain18" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter18" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter19" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <chain id="chain19" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter20" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter21" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <chain id="chain20" out="00:00:01.717">
+    <property name="length">00:00:01.733</property>
+    <property name="eof">pause</property>
+    <property name="resource">c:/Users/Pichau/Downloads/X2Download.com-transição para video chroma key.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="seekable">1</property>
+    <property name="audio_index">1</property>
+    <property name="video_index">0</property>
+    <property name="mute_on_pause">0</property>
+    <property name="shotcut:hash">c75c80f89dec5fc755bff16adbb6cc27</property>
+    <property name="shotcut:caption">X2Download.com-transição para video chroma key.mp4</property>
+    <property name="xml">was here</property>
+    <filter id="filter22" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#00fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+    <filter id="filter23" out="00:00:01.717">
+      <property name="version">0.6</property>
+      <property name="mlt_service">frei0r.select0r</property>
+      <property name="threads">0</property>
+      <property name="0">#01fe00</property>
+      <property name="1">1</property>
+      <property name="2">0.2</property>
+      <property name="3">0.2</property>
+      <property name="4">0.2</property>
+      <property name="5">0</property>
+      <property name="6">0</property>
+      <property name="7">0.5</property>
+      <property name="8">0.9</property>
+      <property name="9">0</property>
+      <property name="disable">0</property>
+    </filter>
+  </chain>
+  <playlist id="playlist2">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V3</property>
+    <blank length="00:00:00.417"/>
+    <entry producer="chain10" in="00:00:00.000" out="00:00:01.717"/>
+    <blank length="00:01:17.617"/>
+    <entry producer="chain11" in="00:00:00.000" out="00:00:01.717"/>
+    <blank length="00:00:00.117"/>
+    <entry producer="chain12" in="00:00:00.000" out="00:00:01.717"/>
+    <blank length="00:02:20.617"/>
+    <entry producer="chain13" in="00:00:00.000" out="00:00:01.717"/>
+    <blank length="00:00:00.033"/>
+    <entry producer="chain14" in="00:00:00.000" out="00:00:01.717"/>
+    <blank length="00:06:05.967"/>
+    <entry producer="chain15" in="00:00:00.000" out="00:00:01.717"/>
+    <blank length="00:00:00.033"/>
+    <entry producer="chain16" in="00:00:00.000" out="00:00:01.717"/>
+    <blank length="00:07:17.717"/>
+    <entry producer="chain17" in="00:00:00.000" out="00:00:01.717"/>
+    <entry producer="chain18" in="00:00:00.000" out="00:00:01.717"/>
+    <blank length="00:02:07.467"/>
+    <entry producer="chain19" in="00:00:00.000" out="00:00:01.717"/>
+    <blank length="00:00:21.583"/>
+    <entry producer="chain20" in="00:00:00.000" out="00:00:01.717"/>
+  </playlist>
+  <tractor id="tractor8" title="Shotcut version 21.10.31" in="00:00:00.000" out="00:20:00.250">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">1</property>
+    <property name="shotcut:scaleFactor">0.383248</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <track producer="playlist1"/>
+    <track producer="playlist2"/>
+    <transition id="transition16">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition17">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition18">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+    </transition>
+    <transition id="transition19">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition20">
+      <property name="a_track">1</property>
+      <property name="b_track">3</property>
+      <property name="version">0.9</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+    </transition>
+    <transition id="transition21">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+  </tractor>
+</mlt>
